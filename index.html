@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Image Convert & Resize</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+          <circle cx="8.5" cy="8.5" r="1.5"/>
+          <polyline points="21 15 16 10 5 21"/>
+        </svg>
+      </div>
+      <h1>Image Convert & Resize</h1>
+    </div>
+    <div class="drop-zone" id="dropZone">
+      <p>Drag & Drop or Click to Upload</p>
+    </div>
+    <input type="file" id="imageInput" accept="image/*">
+    <img id="preview" alt="Image preview">
+    <div class="file-info" id="fileInfo"></div>
+    <div class="controls">
+      <div>
+        <label for="widthInput">Width:</label>
+        <input type="number" id="widthInput" placeholder="Width">
+      </div>
+      <div>
+        <label for="heightInput">Height:</label>
+        <input type="number" id="heightInput" placeholder="Height">
+      </div>
+      <div>
+        <label for="formatSelect">Format:</label>
+        <select id="formatSelect">
+          <option value="png">PNG</option>
+          <option value="jpeg">JPEG</option>
+          <option value="webp">WebP</option>
+        </select>
+      </div>
+    </div>
+    <button id="convertBtn">Convert & Save</button>
+    <link rel="stylesheet" href="main.js">
+  </div>
+</body>
+</html>
